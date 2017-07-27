@@ -1,0 +1,11 @@
+<template name="stock">
+  <div class="stock-card">
+    <div class="info">
+      <p class="h1">{{symbol}} - <span class="company">{{company}} {{#if isDataLoading}}[Loading chart...]{{/if}}</span></p>
+      <p class="description">{{description}}</p>
+    </div>
+    <div class="options">
+      <button class="delete">&times;</button>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,64 @@
+/* CSS declarations go here */
+
+/*
+Color Scheme:
+light: #FCFFF5
+mid-light:#D1DBBD
+mid:#91AA9D
+mid-dark:#3E606F
+dark:#193441
+*/
+
+body{
+  background-color: #FCFFF5;
+}
+
+.stock-chart-container {
+  border: 1px solid #193441;
+  margin-bottom: 20px;
+}
+
+.stock-list {
+  padding: 0.5em;
+  background-color: #193441;
+}
+
+.stock-card {
+  background-color: #3E606F;
+  color: #193441;
+  margin: 0.5em;
+  padding: 1em;
+  display: flex;
+}
+
+.h1 {
+  font-size: 2em;
+}
+
+.title {
+  color: #193441;
+}
+
+.company {
+  color: #D1DBBD;
+}
+
+.options {
+  margin-left: auto;
+}
+
+.delete {
+  background: none;
+  outline: none;
+  border: 2px solid #91AA9D;
+  background-color: #193441;
+  color: #D1DBBD;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+.new-stock-input {
+  margin-top: 10px;
+  background-color: #FCFFF5;
+  color: #3E606F;
+}

@@ -1,0 +1,26 @@
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">Stock Market Viewer</h1>
+    </header>
+    <div class="stock-chart-container">
+      <div id="stock-chart" style="height: 400px; min-width: 310px"></div>
+    </div>
+
+    <div class="stock-list">
+      {{#each stocks}}
+        {{> stock}}
+      {{/each}}
+      
+      <div class="stock-card">
+        <form class="new-stock">
+          <p class="h1">New Stock:</p>
+          <input class="new-stock-input" type="text" name="text" placeholder="Type stock symbol..." />
+          <span>{{#if stockSymbolLoading}}Loading stock card...{{/if}}</span>
+          {{#if stockInfoError}}Error stock symbol not found!{{/if}}
+        </form>
+      </div>
+    
+    </div>
+  </div>
+</body>
