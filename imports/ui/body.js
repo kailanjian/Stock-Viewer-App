@@ -63,6 +63,7 @@ Template.stock.onRendered(function() {
 
 Template.body.onRendered(function() {
   createChart();
+  Meteor.call("showStockInfoError", false);
 });
 
 Template.body.helpers({
